@@ -1,0 +1,58 @@
+// sass -> css
+// scss -> css3
+// install live saas compiler
+// for partials we have to create through _
+
+// 1. operator
+// 2. variables
+// 3. Nesting
+// 4. mixin
+// 5. parameters
+// 6. partials
+
+@import "mixin";
+@import "var";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+// variables
+
+
+
+// nesting
+.main-header{
+    width: 100vw;
+    height: 100vh;
+    @include flexprop;
+    background: $bg-Color;
+
+    h1{
+        @include commonCode(0.8rem,uppercase);
+       
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    p{
+        @include commonCode(0.3rem,uppercase);
+        
+        &:hover{
+            color: #ffffff;
+        }
+        &::after{
+            content:" Channel";
+        }
+    }
+    
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
