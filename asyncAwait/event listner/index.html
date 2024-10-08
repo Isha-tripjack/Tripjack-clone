@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Event listener</title>
+</head>
+<body>
+    <h1>Amazing Images</h1>
+    <div style="background-color: #414141; color:aliceblue;">
+        <ul>
+            <li><img width="200px" src="./Images/1.jpg" id="img1" alt="photoshop"></li>
+            <li><img width="200px" src="./Images/2.jpg" id="img2" alt="photoshop"></li>
+            <li><img width="200px" src="./Images/download-2.jpg" id="img3" alt="photoshop"></li>
+            <li><img width="200px" src="./Images/download-3.jpg" id="owl" alt="photoshop" ></li>
+            <li><img width="200px" src="./Images/2.jpg" id="img5" alt="photoshop"></li>
+            <li><a style="color:#414141" href="http://google.com" id="google">Google</a></li>
+          
+        </ul>
+    </div>
+</body>
+<script>
+   /* document.getElementById('owl').onclick = function(){
+        alert('owl clicked')
+    }*/
+ document.getElementById('owl').addEventListener('click',function(){
+    alert('owl clicked again'), false
+ })
+
+ //time //timestamp //target
+ //defaultPrevented //toElement //srcElement //currentTarget //ClentX , clientY , offset , screenX,Y
+</script>
+</html>
